@@ -9,6 +9,25 @@ const Banner = () => {
         the relationships that matter most.
       </p>
       <button className="btn btn-active btn-success">Add a Friend</button>
+
+      <div className="flex gap-7 m-10 justify-center">
+        <div className=" px-12 py-5 bg-amber-50 rounded-xl">
+          <h3 className="text-2xl font-bold text-gray-700">10</h3>
+          <p className=" text-gray-500">Total Friends</p>
+        </div>
+        <div className=" px-12 py-5 bg-amber-50 rounded-xl">
+          <h3 className="text-2xl font-bold text-gray-700">3</h3>
+          <p className=" text-gray-500">On Track</p>
+        </div>
+        <div className=" px-12 py-5 bg-amber-50 rounded-xl">
+          <h3 className="text-2xl font-bold text-gray-700">6</h3>
+          <p className=" text-gray-500">Need Attention</p>
+        </div>
+        <div className=" px-12 py-5 bg-amber-50 rounded-xl">
+          <h3 className="text-2xl font-bold text-gray-700">12</h3>
+          <p className=" text-gray-500">Interactions This Month</p>
+        </div>
+      </div>
     </div>
   );
 };
