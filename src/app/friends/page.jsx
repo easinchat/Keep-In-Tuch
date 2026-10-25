@@ -1,11 +1,12 @@
 import FriendsCard from "@/components/FriendsCard";
 import React from "react";
+import friends from "../data/friend.json";
 
 const FriendsPage = async () => {
-  const friendsPromise = await fetch(
-    `${process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000"}/friends.json`,
-  );
-  const friends = await friendsPromise.json();
+  // const friendsPromise = await fetch(
+  //  '
+  // );
+  // const friends = await friendsPromise.json();
 
   return (
     <div>
