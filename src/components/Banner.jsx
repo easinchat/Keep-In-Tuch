@@ -8,8 +8,9 @@ const Banner = () => {
         Your personal shelf of meaningful connections. Browse, tend, and nurture
         the relationships that matter most.
       </p>
-      <button className="btn btn-active btn-success">Add a Friend</button>
-
+      <button className="btn border-[#244D3F] bg-[#244D3F] text-white hover:bg-[#1D382F]">
+        Add a Friend
+      </button>
       <div className="flex gap-7 m-10 justify-center">
         <div className=" px-12 py-5 bg-amber-50 rounded-xl">
           <h3 className="text-2xl font-bold text-gray-700">10</h3>
