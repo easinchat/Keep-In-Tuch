@@ -59,20 +59,3 @@ const Timeline = () => {
 };
 
 export default Timeline;
-
-{
-  /* <div className="flex items-center gap-4 rounded-lg border border-gray-100 bg-white px-5 py-4 shadow-sm">
-        <span className="text-3xl">{icons[item.type]}</span>
-
-        <div>
-          <p className="text-base">
-            <span className="font-semibold text-[#244D3F]">{item.type}</span>
-            <span className="text-sm text-gray-500">
-              {" "}
-              with {item.friendName}
-            </span>
-          </p>
-          <p className="text-sm text-gray-400">{item.date}</p>
-        </div>
-      </div> */
-}
