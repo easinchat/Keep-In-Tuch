@@ -1,4 +1,7 @@
+import Link from "next/link";
 import React from "react";
+import { IoHomeOutline, IoTimeOutline } from "react-icons/io5";
+import { MdOutlineQueryStats } from "react-icons/md";
 
 const Navbar = () => {
   return (
@@ -8,9 +11,28 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end gap-3">
-        <a className="btn">Button</a>
-        <a className="btn">Button</a>
-        <a className="btn">Button</a>
+        <Link
+          href={"/"}
+          className="btn inline-flex flex-row items-center justify-center gap-2 border-none shadow-none"
+        >
+          <IoHomeOutline />
+          <span>Home</span>
+        </Link>
+
+        <Link
+          href={"/timeline"}
+          className="btn inline-flex flex-row items-center justify-center gap-2 border-none shadow-none"
+        >
+          <IoTimeOutline />
+          Timeline
+        </Link>
+        <Link
+          href={""}
+          className="btn inline-flex flex-row items-center justify-center gap-2 border-none shadow-none"
+        >
+          <MdOutlineQueryStats />
+          Stats
+        </Link>
       </div>
     </div>
   );

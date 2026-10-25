@@ -1,8 +1,9 @@
+import Link from "next/link";
 import React, { use } from "react";
 
 const FriendsCard = ({ friend }) => {
   return (
-    <div className="">
+    <Link href={`/friends/${friend.id}`}>
       <div className="flex flex-col items-center gap-2 rounded-xl bg-white p-6 text-center shadow-md">
         {/* ছবি */}
         <img
@@ -48,7 +49,7 @@ const FriendsCard = ({ friend }) => {
               : "On-Track"}
         </span>
       </div>
-    </div>
+    </Link>
   );
 };
 
