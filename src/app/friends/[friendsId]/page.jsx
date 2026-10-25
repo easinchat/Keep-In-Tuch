@@ -1,10 +1,10 @@
 import Buttons from "@/components/Buttons";
-
+import friends from "@/app/data/friends.json";
 const FriendsDetails = async ({ params }) => {
   const { friendsId } = await params;
-  const friendsPromise = await fetch(`http://localhost:3000/friends.json`);
-  const Details = await friendsPromise.json();
-  const friend = Details.find((Detail) => Detail.id === parseInt(friendsId));
+  // const friendsPromise = await fetch(`http://localhost:3000/friends.json`);
+  // const Details = await friendsPromise.json();
+  const friend = friends.find((Detail) => Detail.id === parseInt(friendsId));
 
   return (
     <div className="flex justify-evenly gap-10 mt-10 max-w-7xl mx-auto">

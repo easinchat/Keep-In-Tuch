@@ -1,9 +1,10 @@
 import FriendsCard from "@/components/FriendsCard";
 import React from "react";
-
+import friends from "@/app/data/friends.json";
 const FriendsPage = async () => {
-  const friendsPromise = await fetch("http://localhost:3000/friends.json");
-  const friends = await friendsPromise.json();
+  // const friendsPromise = await fetch("http://localhost:3000/friends.json");
+  // const friends = await friendsPromise.json();
+  console.log(friends);
 
   return (
     <div>
