@@ -7,7 +7,9 @@ const Navbar = () => {
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="navbar-start">
-        <a className="btn btn-ghost text-xl">Keep-In-Tuch</a>
+        <Link href={"/"} className="btn btn-ghost text-xl">
+          Keep-In-Tuch
+        </Link>
       </div>
 
       <div className="navbar-end gap-3">
